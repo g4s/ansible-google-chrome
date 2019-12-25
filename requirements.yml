@@ -1,0 +1,5 @@
+- src: https://github.com/g4s/ansible-homebrew
+  name: g4s.homebrew
+
+- src: https://github.com/g4s/ansible-chocolatey
+  name: g4s.chcocolatey

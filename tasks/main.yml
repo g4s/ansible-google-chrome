@@ -1,0 +1,22 @@
+---
+
+- name: install Google Chrome
+  block:
+    - homebrew_cask:
+        name: google-chrome
+        state: present
+      when: ansible_os_family == 'Darwin'
+
+    - apt:
+        deb: https://www.google.com/chrome/thank-you.html?platform=linux&statcb=0&installdataindex=empty&defaultbrowser=0#
+      when: ansible_os_family == 'Debian'
+
+    - portage:
+        package: www-client/google-chrome
+        state: present
+      when: ansible_os_family == 'Gentoo'
+
+    - win_chocolatey:
+        name: googlechrome
+        state: present
+      when: ansible_os_family == 'Windows'    

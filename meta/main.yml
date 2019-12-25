@@ -1,0 +1,31 @@
+---
+
+dependencies: ['g4s.homebrew', 'g4s.chocolatey']
+
+galaxy_info:
+  author: 'Gregor A. Segner'
+  description: 'Installing Google Chrome on target system'
+  company: ''
+  license: 'MIT'
+  min_ansible_version: '1.7.1'
+  platforms:
+    - name: Ubuntu
+    - name: Debian
+    - name: Gentoo
+    - name: Windows
+
+      categories: [www-client]
+
+ansigenome_info:
+  galaxy_id: ''
+
+  travis: True
+
+  #synopsis: |
+    #net-google-chrome described in a few paragraphs....
+
+  #usage: |
+    #Describe how to use net-google-chrome...
+
+  #custom: |
+  #  Any custom output you want after the usage section...
